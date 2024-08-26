@@ -1,0 +1,31 @@
+.homeSection{
+    border: 0.1rem solid #000;
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 0.85rem;
+}
+.homecontainer{
+    border: 0.1rem solid #000;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    padding: 0.5rem 0.2rem;
+    width: 100%;
+}
+.cardLayout{
+    border: 0.1rem solid #000;
+    /* padding: 0.5rem; */
+    width: 70%;
+}
+.cardimg{
+    border: 0.1rem solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardimg img{
+    padding: 0.5rem;
+    width: 15rem;
+    height: 20rem;
+}

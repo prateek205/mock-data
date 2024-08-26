@@ -1,0 +1,44 @@
+.navbarsection{
+    /* border: 0.1rem solid #000; */
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: aqua;
+}
+.navheading{
+    /* border: 0.1rem solid #000; */
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navheading h4{
+    cursor: pointer;
+    padding: 0.85rem 2rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+.navheading h4:hover{
+    border: 0.15rem solid #fff;
+}
+.navitem{
+    /* border: 0.1rem solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+.navitem p{
+cursor: pointer;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.85rem 2rem;
+}
+.navitem p:hover{
+    border: 0.15rem solid #fff;
+}
