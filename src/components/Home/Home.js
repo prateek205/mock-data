@@ -1,10 +1,10 @@
 import React from "react";
-import HomeLayout from "../HomeLayout/HomeLayout";
+import HomeMapping from "../HomeMapping/HomeMapping";
 
 const Home = () => {
   return (
     <>
-      <HomeLayout />
+      <HomeMapping />
     </>
   );
 };

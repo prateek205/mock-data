@@ -1,31 +1,22 @@
-.homeSection{
-    border: 0.1rem solid #000;
-    width: 80%;
-    margin: auto;
-    margin-top: 1%;
-    padding: 0.85rem;
+.cardLayout {
+  border: 0.1rem solid #000;
+  width: 100%;
 }
-.homecontainer{
-    border: 0.1rem solid #000;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 0.5rem;
-    padding: 0.5rem 0.2rem;
-    width: 100%;
+.cardimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.cardLayout{
-    border: 0.1rem solid #000;
-    /* padding: 0.5rem; */
-    width: 70%;
+.cardimg img {
+  padding: 0.5rem;
+  width: 15rem;
+  height: 20rem;
 }
-.cardimg{
-    border: 0.1rem solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cardtitle {
+  /* border: 0.1rem solid #000; */
+  text-align: center;
+  padding: 0.5rem;
 }
-.cardimg img{
-    padding: 0.5rem;
-    width: 15rem;
-    height: 20rem;
+.cardtitle h4 {
+  font-size: 1rem;
 }
