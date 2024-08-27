@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import { useEffect } from "react";
 import "./SingleProduct.css";
 import { useParams } from "react-router-dom";
 import { useProviderContext } from "../../context/productContext";
@@ -9,22 +9,20 @@ const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } =
     useProviderContext();
 
-//   console.log(singleProduct);
-
   const { id } = useParams();
 
+  const { title, price } = singleProduct;
+
   useEffect(() => {
-    getSingleProduct(`${API}?id=${id}`);
-    // eslint-disable-next-line
-  }, []);
+    getSingleProduct(`${API}/${id}`);
+  }, [id]);
 
   if (isSingleLoading) {
     return <div>.... loading </div>;
   }
   return (
     <div>
-      {" "}
-      <h1>SingleProduct {singleProduct.title}</h1>{" "}
+      SingleProduct {title} {price}
     </div>
   );
 };

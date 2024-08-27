@@ -13,7 +13,7 @@ const initialState = {
   homeMapping: [],
   isSingleLoading:false,
   isSingleError: false,
-  singleProduct:{}
+  singleProduct:{},
 };
 
 
