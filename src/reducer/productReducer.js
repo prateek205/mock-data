@@ -7,10 +7,15 @@ const productReducer = (state, action) => {
       };
 
     case "SET_API_DATA":
+      const filteredData = action.payload.filter((curElem) => {
+        return curElem.features === true;
+      });
+
       return {
         ...state,
         isLoading: false,
         products: action.payload,
+        homeMapping: filteredData,
       };
 
     case "API_ERROR":
@@ -18,6 +23,26 @@ const productReducer = (state, action) => {
         ...state,
         isLoading: false,
         isError: true,
+      };
+
+    case "SET_SINGLE_LOADING":
+      return {
+        ...state,
+        isSingleLoading: true,
+      };
+
+    case "SET_SINGLE_PRODUCT":
+      return {
+        ...state,
+        isSingleLoading: false,
+        singleProduct: action.payload,
+      };
+
+    case "SINGLE_PRODUCT_ERROR":
+      return {
+        ...state,
+        isSingleLoading: false,
+        isSingleError: true,
       };
 
     default:

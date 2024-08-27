@@ -4,7 +4,10 @@ import HomeLayout from "../HomeLayout/HomeLayout";
 import { useProviderContext } from "../../context/productContext";
 
 const HomeMapping = () => {
-  const { isLoading, products } = useProviderContext();
+  const { isLoading, homeMapping } = useProviderContext();
+
+  // console.log(homeMapping);
+  
 
   if (isLoading) {
     return <div>.... Loading</div>;
@@ -13,7 +16,7 @@ const HomeMapping = () => {
   return (
     <>
     <div className="homeSection">
-      {products.map((curElem) => {
+      {homeMapping.map((curElem) => {
         return <HomeLayout key={curElem.id} {...curElem} />;
       })}
       </div>
